@@ -5,7 +5,7 @@ Engineering Graphs Written In JavaScript
 - Author: gbmhunter <gbmhunter@gmail.com> (http://www.cladlab.com)
 - Created: 2013/12/16
 - Last Modified: 2013/12/16
-- Version: v1.0.0.0
+- Version: v1.0.1.0
 - Company: CladLabs
 - Project: Free Code Libraries	.
 - Language: HTML/JS/PHP
@@ -63,5 +63,6 @@ Changelog
 ========= ========== ============================================================================================================
 Version   Date       Comment
 ========= ========== ============================================================================================================
+v1.0.1.0  2013/12/16 Fixed jQuery.csv library script include.
 v1.0.0.0  2013/12/16 Initial commit. 'MOSFET gate drive with deadtime' graph added.
 ========= ========== ============================================================================================================

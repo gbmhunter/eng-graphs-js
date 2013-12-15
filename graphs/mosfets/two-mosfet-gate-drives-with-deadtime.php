@@ -1,7 +1,7 @@
 
 <script src="https://www.google.com/jsapi"></script>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="eng-graphs/lib/jquery.csv-0.71.js"></script>
+<script src="http://cladlab.com/eng-graphs-js/lib/jquery.csv-0.71.js"></script>
 
 <div id="dashboard1">
 	<div id="chart1"></div>
