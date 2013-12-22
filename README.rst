@@ -4,8 +4,8 @@ Engineering Graphs Written In JavaScript
 
 - Author: gbmhunter <gbmhunter@gmail.com> (http://www.cladlab.com)
 - Created: 2013/12/16
-- Last Modified: 2013/12/16
-- Version: v1.0.1.0
+- Last Modified: 2013/12/23
+- Version: v1.0.2.0
 - Company: CladLabs
 - Project: Free Code Libraries	.
 - Language: HTML/JS/PHP
@@ -53,7 +53,7 @@ This repo is designed so that you can clone it directly (using SSH) into a web s
 
 ::
 
-	include $_SERVER['DOCUMENT_ROOT'] . '/graphs/mosfets/two-mosfet-gate-drives-with-deadtime.php';
+	include $_SERVER['DOCUMENT_ROOT'] . 'eng-calcs-js/graphs/mosfets/two-mosfet-gate-drives-with-deadtime.php';
 	
 (assuming you cloned the repo directly into ``public_html``). The PHP file will automatically include it's respective Javascript file that resides in the same directory. All dependencies are automatically included via CDNs.
 	
@@ -63,6 +63,7 @@ Changelog
 ========= ========== ============================================================================================================
 Version   Date       Comment
 ========= ========== ============================================================================================================
+v1.0.2.0  2013/12/23 Fixed bug where graphs were not scrolling when sliders were moved, it was due to the x-axis having fixed minimum and maximums, closes #1.
 v1.0.1.0  2013/12/16 Fixed jQuery.csv library script include.
 v1.0.0.0  2013/12/16 Initial commit. 'MOSFET gate drive with deadtime' graph added.
 ========= ========== ============================================================================================================

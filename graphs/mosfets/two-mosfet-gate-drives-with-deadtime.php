@@ -62,7 +62,7 @@
 					containerId: 'chart1',
 					options: {
 						title: 'Two MOSFET gate drives with dead-time.',
-						hAxis: {title: data.getColumnLabel(0), minValue: data.getColumnRange(0).min, maxValue: data.getColumnRange(0).max},
+						hAxis: {title: data.getColumnLabel(0)},
 						vAxis: {title: data.getColumnLabel(1), minValue: data.getColumnRange(1).min, maxValue: data.getColumnRange(1).max},
 						width: 800,
 						height: 300,
