@@ -3,15 +3,15 @@
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://cladlab.com/eng-graphs-js/lib/jquery.csv-0.71.js"></script>
 
-<div id="dashboard1">
-	<div id="chart1"></div>
-   <div id="control1"></div>
+<div id="dashboardIovisbc">
+	<div id="chartIovisbc"></div>
+   <div id="controlIovisbc"></div>
 </div>
 
 <script>
 	// Load the visualization library from Google with core and control libraries and set a listener
 	google.load('visualization', '1.0', {'packages':['corechart', 'controls']});
-	google.setOnLoadCallback(drawChartTmgdwd);
+	google.setOnLoadCallback(drawChartIovisbc);
 	
 	<?php
 	// Get full path
@@ -19,12 +19,18 @@
 	// Remove everything up to public_html
 	$cur_file=preg_replace('/(.*?)\/(.*?)\/(public_html|htdocs)/', '', $cur_file);
 	// Output HTML
-	echo 'var currPathTmgdwd = "' . $cur_file . '";';
+	echo 'var currPathIovisbc = "' . $cur_file . '";';
 	?>
 	
-	function drawChartTmgdwd() {
+	var csvFileName = 'inductor-output-voltage-in-simple-boost-converter.csv'
+	var graphTitle = 'Inductor Output Voltage In Simple Boost Converter'
+	var dashboardName = 'dashboardIovisbc';
+	var chartName = 'chartIovisbc';
+	var controlName = 'controlIovisbc';
+	
+	function drawChartIovisbc() {
 		// grab the CSV
-		$.get(currPathTmgdwd + "/two-mosfet-gate-drives-with-deadtime.csv",
+		$.get(currPathIovisbc + '/' + csvFileName,
 			// Call-back once CSV has been returned
 			function(csvString) {
 				// Transform the CSV string into a 2-dimensional array
@@ -34,11 +40,11 @@
 				var data = new google.visualization.arrayToDataTable(arrayData);
 				
 				var dashboard = new google.visualization.Dashboard(
-					document.getElementById('dashboard1'));
+					document.getElementById(dashboardName));
 				
 				var control = new google.visualization.ControlWrapper({
 					controlType: 'ChartRangeFilter',
-					containerId: 'control1',
+					containerId: controlName,
 					options: {
 						filterColumnIndex: 0,
 						ui: {
@@ -58,9 +64,9 @@
 				
 				var chart = new google.visualization.ChartWrapper({
 					chartType: 'LineChart',
-					containerId: 'chart1',
+					containerId: chartName,
 					options: {
-						title: 'Two MOSFET gate drives with dead-time.',
+						title: graphTitle,
 						hAxis: {title: data.getColumnLabel(0)},
 						vAxis: {title: data.getColumnLabel(1), minValue: data.getColumnRange(1).min, maxValue: data.getColumnRange(1).max},
 						width: 800,
