@@ -1,6 +1,8 @@
 
 <script src="https://www.google.com/jsapi"></script>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	window.jQuery || document.write('<script src="http://code.jquery.com/jquery-latest.min.js"><\/script>')
+</script>
 <script src="http://cladlab.com/eng-graphs-js/lib/jquery.csv-0.71.js"></script>
 
 <div id="dashboard1">

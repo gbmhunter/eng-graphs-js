@@ -5,7 +5,7 @@ Engineering Graphs Written In JavaScript
 - Author: gbmhunter <gbmhunter@gmail.com> (http://www.cladlab.com)
 - Created: 2013/12/16
 - Last Modified: 2013/12/23
-- Version: v2.0.0.0
+- Version: v2.0.1.0
 - Company: CladLabs
 - Project: Free Code Libraries	.
 - Language: HTML/JS/PHP
@@ -63,6 +63,7 @@ Changelog
 ========= ========== ============================================================================================================
 Version   Date       Comment
 ========= ========== ============================================================================================================
+v2.0.1.0  2013/12/23 Added conditional include for jQuery in all graphs to make sure it is included only once. Should fix Wordpress Megamenu clashes, closes #2.
 v2.0.0.0  2013/12/23 Added 'Inductor Output Voltage In Simple Boost Converter' graph. Made graph names unique so that multiple graphs can be displayed on the same page.
 v1.0.2.0  2013/12/23 Fixed bug where graphs were not scrolling when sliders were moved, it was due to the x-axis having fixed minimum and maximums, closes #1.
 v1.0.1.0  2013/12/16 Fixed jQuery.csv library script include.
