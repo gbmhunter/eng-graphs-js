@@ -36,7 +36,7 @@
 			// Call-back once CSV has been returned
 			function(csvString) {
 				// Transform the CSV string into a 2-dimensional array
-				var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+				var arrayData = jQuery.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
 				
 				// This new DataTable object holds all the data
 				var data = new google.visualization.arrayToDataTable(arrayData);
