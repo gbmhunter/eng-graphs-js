@@ -5,7 +5,7 @@ Engineering Graphs Written In JavaScript
 - Author: gbmhunter <gbmhunter@gmail.com> (http://www.cladlab.com)
 - Created: 2013/12/16
 - Last Modified: 2013/12/23
-- Version: v2.0.3.0
+- Version: v2.0.4.0
 - Company: CladLabs
 - Project: Free Code Libraries	.
 - Language: HTML/JS/PHP
@@ -63,6 +63,7 @@ Changelog
 ========= ========== ============================================================================================================
 Version   Date       Comment
 ========= ========== ============================================================================================================
+v2.0.4.0  2013/12/23 Replaced more '$''s with 'jQuery', to make compatible with Wordpress Megamenu plugin.
 v2.0.3.0  2013/12/23 Replaced more '$''s with 'jQuery', to make compatible with Wordpress Megamenu plugin.
 v2.0.2.0  2013/12/23 Replaced '$' with 'jQuery', to make compatible with Wordpress Megamenu plugin, closes #3.
 v2.0.1.0  2013/12/23 Added conditional include for jQuery in all graphs to make sure it is included only once. Should fix Wordpress Megamenu clashes, closes #2.
