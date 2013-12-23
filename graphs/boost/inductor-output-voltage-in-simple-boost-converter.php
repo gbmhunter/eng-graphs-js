@@ -24,7 +24,7 @@
 	echo 'var currPathIovisbc = "' . $cur_file . '";';
 	?>
 	
-	var csvFileName = 'inductor-output-voltage-in-simple-boost-converter.csv'
+	var csvFileName = 'inductor-output-voltage-in-simple-boost-converter-small.csv'
 	var graphTitle = 'Inductor Output Voltage In Simple Boost Converter'
 	var dashboardName = 'dashboardIovisbc';
 	var chartName = 'chartIovisbc';
