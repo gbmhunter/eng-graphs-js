@@ -26,7 +26,7 @@
 	
 	function drawChartTmgdwd() {
 		// grab the CSV
-		$.get(currPathTmgdwd + "/two-mosfet-gate-drives-with-deadtime.csv",
+		jQuery.get(currPathTmgdwd + "/two-mosfet-gate-drives-with-deadtime.csv",
 			// Call-back once CSV has been returned
 			function(csvString) {
 				// Transform the CSV string into a 2-dimensional array

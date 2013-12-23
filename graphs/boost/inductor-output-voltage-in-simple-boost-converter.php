@@ -32,7 +32,7 @@
 	
 	function drawChartIovisbc() {
 		// grab the CSV
-		$.get(currPathIovisbc + '/' + csvFileName,
+		jQuery.get(currPathIovisbc + '/' + csvFileName,
 			// Call-back once CSV has been returned
 			function(csvString) {
 				// Transform the CSV string into a 2-dimensional array
